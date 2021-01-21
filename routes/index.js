@@ -11,7 +11,7 @@ router.post('/api/upload', upload, async ({ file }, res) => {
 });
 
 router.get('*', (_, res) => {
-  res.sendFile(path.join(__dirname, 'client/public/index.html'));
+  res.sendFile(path.join(__dirname, '../client/public/index.html'));
 });
 
 module.exports = router;

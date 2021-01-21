@@ -13,11 +13,12 @@ const routes = require('./routes');
 
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
 app.use(express.json({ limit: '10mb' }));
-app.use(routes);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+app.use(routes);
 
 // LISTENER
 app.listen(PORT, () => {

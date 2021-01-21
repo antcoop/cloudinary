@@ -7,7 +7,7 @@ const express = require('express');
 require('dotenv').config();
 
 // HOUSEKEEPING
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 5100;
 const app = express();
 const routes = require('./routes');
 

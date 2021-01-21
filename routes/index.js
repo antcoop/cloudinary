@@ -1,3 +1,4 @@
+const path = require('path');
 const { unlinkSync } = require('fs');
 const router = require('express').Router();
 const { upload, uploadToCloudinary } = require('../controllers/upload');
